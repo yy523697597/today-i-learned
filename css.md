@@ -1,3 +1,6 @@
+### BFC
+
+BFC ：block formatting context 块级格式化上下文
 
 BFC 作用 ：
 
@@ -17,3 +20,35 @@ BFC 作用 ：
 1. 清除浮动
 2. 防止与浮动元素重叠
 3. 利用 BFC 包含一个元素，避免边距重叠，margin collapse
+
+### 垂直居中方案
+
+1. ```css
+   .middle {
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     margin: auto;
+   }
+   ```
+
+   
+
+2. flex 布局
+
+   ```css
+   .middle {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }
+   ```
+
+3. ```css
+   .middle {
+     display: table-cell;
+     vertical-align: middle;
+   }
+   ```
+
+   

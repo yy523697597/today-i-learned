@@ -28,7 +28,7 @@ event.stopPropagation()
 event.stopImmediatePropagation(); // 立即阻止冒泡
 // 使用父级元素代理事件的时候，currentTarget 指向父级元素，即事件绑定元素
 event.currentTarget
-// 使用父级元素代理事件的时候，currentTarget 指向触发事件的元素
+// 使用父级元素代理事件的时候，target 指向触发事件的元素
 event.target
 ```
 
