@@ -16,7 +16,7 @@
    ```js
    let name = "yu";
    const age = 26;
-   window.name; // undefined
+   window.age; // undefined
    age = 24; // 报错， Uncaught TypeError: Assignment to constant variable.
    ```
 
