@@ -11,10 +11,12 @@
 1. let 	const 
 
    const 定义的变量无法修改
+   let const 定义的变量不会挂在到 window 上去
 
    ```js
    let name = "yu";
    const age = 26;
+   window.name; // undefined
    age = 24; // 报错， Uncaught TypeError: Assignment to constant variable.
    ```
 
